@@ -3,7 +3,86 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Responsive Flex</title>
+    <style>
+      .container {
+        display: flex;
+        gap: 30px;
+      }
+      .box {
+        background-color: slateblue;
+        padding: 20px;
+        border-radius: 10px;
+      }
+      .item {
+        width: 500px;
+        height: 200px;
+        background-color: aquamarine;
+        border: 2px solid teal;
+      }
+      .container-2 {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+      }
+      @media screen and (max-width: 576px) {
+        .container {
+          flex-direction: column-reverse;
+          gap: 30px;
+        }
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <h2>Flexible Flex</h2>
+    <div class="container">
+      <div class="box">
+        <h3>First Box</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem
+          sint ducimus error cum quam, veritatis, odit perspiciatis, accusamus
+          beatae incidunt ab? Velit quod, quam nostrum architecto molestias
+          accusantium, sint consequatur minima veritatis saepe dignissimos in!
+          Rem amet ratione ipsum, necessitatibus officia eligendi aliquam,
+          deserunt iste itaque soluta fuga quis voluptas. Odit voluptates
+          accusantium, molestiae soluta molestias nesciunt officiis quis
+          laudantium saepe deleniti repellat adipisci ex, nostrum, temporibus
+          facilis dolor numquam a? Culpa omnis nulla at ratione id voluptas
+          aliquid, quod eum fugit, excepturi consequatur ullam rerum quae sequi
+          accusantium similique odit! Distinctio voluptas ex doloremque dicta
+          quae, perferendis tempora id.
+        </p>
+      </div>
+      <div class="box">
+        <h3>Second Box</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem
+          sint ducimus error cum quam, veritatis, odit perspiciatis, accusamus
+          beatae incidunt ab? Velit quod, quam nostrum architecto molestias
+          accusantium, sint consequatur minima veritatis saepe dignissimos in!
+          Rem amet ratione ipsum, necessitatibus officia eligendi aliquam,
+          deserunt iste itaque soluta fuga quis voluptas. Odit voluptates
+          accusantium, molestiae soluta molestias nesciunt officiis quis
+          laudantium saepe deleniti repellat adipisci ex, nostrum, temporibus
+          facilis dolor numquam a? Culpa omnis nulla at ratione id voluptas
+          aliquid, quod eum fugit, excepturi consequatur ullam rerum quae sequi
+          accusantium similique odit! Distinctio voluptas ex doloremque dicta
+          quae, perferendis tempora id.
+        </p>
+      </div>
+    </div>
+    <div class="container-2">
+      <div class="item">Item- 1</div>
+      <div class="item">Item- 2</div>
+      <div class="item">Item- 3</div>
+      <div class="item">Item- 4</div>
+      <div class="item">Item- 5</div>
+      <div class="item">Item- 6</div>
+      <div class="item">Item- 7</div>
+      <div class="item">Item- 8</div>
+      <div class="item">Item- 9</div>
+      <div class="item">Item- 10</div>
+    </div>
+  </body>
 </html>
