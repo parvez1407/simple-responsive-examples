@@ -38,3 +38,28 @@
     "nav    main   main     advertise"
     "footer footer footer   footer";
 }
+
+/* Responsive for small devices */
+@media screen and (max-width: 576px) {
+  .container {
+    grid-template-areas:
+      "header"
+      "nav"
+      "main"
+      "sidebar"
+      "advertise"
+      "footer";
+  }
+}
+
+/* Responsive for medium devices */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .container {
+    grid-template-areas:
+      "header     header header"
+      "nav        nav    nav"
+      "sidebar    main   main "
+      "sidebar    main   main"
+      "advertise  footer footer";
+  }
+}
